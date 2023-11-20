@@ -1,0 +1,554 @@
+/* general */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1,
+h2,
+h3 
+{
+    margin-bottom: 20px;
+}
+a
+{
+    color: #222;
+    text-decoration: none;
+}
+html,
+body
+{
+    font-family: "Raleway", sans-serif;
+    background-color: #F8F8F8;
+    
+}
+.header
+{
+    background:#222;
+    height: 60px;
+    overflow: auto;
+    max-width: 100%;
+    
+}
+.header nav ul
+ {
+    list-style: none;
+    overflow: hidden;
+
+  
+   
+}
+.header nav ul li
+{
+    float:left;
+   
+   
+}
+.header nav ul li a
+{
+    padding: 10px;
+    color: white;
+    margin: 10px;
+   display: block;
+   
+    
+}
+.header .menu-hamburger 
+{   
+    display: none;
+    width: 35px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+@media screen and (max-width: 789px)
+ {
+    nav 
+    {
+        padding: 0;
+    }
+    .header .menu-hamburger
+    {
+        display: block;
+        right: 5px;
+        top: 45%;
+    
+    }
+    nav
+    {
+        position: absolute;
+        background-color: rgba(255,255, 255, 0);
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    nav ul 
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .header nav ul li
+{
+    margin: 15px 0;
+    font-size: 1.2em ;
+   
+   
+}
+}
+
+.header nav ul li a:hover
+{
+    color: #FFB101;
+}
+.logo
+{
+    position: relative;
+    max-width: 100%;
+   
+   
+}
+
+.logo-img
+{
+    position: relative;
+    width: 230px;
+    margin-bottom: 50px;
+    color: white;
+    left: 39%;
+    top: -20px;
+   
+}
+
+    
+
+
+/* Bannière */
+
+.img_banniere, .video_banniere
+{
+   max-width: 100%;
+   height: auto;
+   display:block;
+   margin-left: auto;
+   margin-right: auto;
+   padding: 20px;
+
+    
+}
+
+.video-article {
+    display:block;
+    width:480px;
+    margin:0 auto 35px auto;
+}
+@media screen and (max-width: 789px)
+ {
+
+.video_banniere
+{
+   display: none;
+    
+}
+}
+.hr
+{
+        background-color: #e0e0e0; 
+        padding: 20px; 
+        margin-top: 20px; 
+      
+      
+}
+/* Actus */
+h2
+{
+    text-align: center;
+    font-size:50px;
+    font-family: 'oswald', 'sans-serif';
+
+}
+.blog-section
+{
+    width: 100%;
+}
+.blog-section, .section-content
+{
+    width: 85%;
+    margin:20px auto;
+}
+.blog-section, .section-content, .cards
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    margin: 25px auto;
+}
+.blog-section, .section-content, .cards, .card
+{
+    width: 100%;
+    position: relative;
+}
+.blog-section, .section-content, .cards, .card img
+{
+    width: 100%;
+  height: auto;
+}
+.blog-section, .section-content, .cards, .card .article
+{
+    padding: 15px 20px;
+}
+
+.blog-section, .section-content, .cards, .card .article p
+{
+    margin: 16px 0px;
+}
+
+.article-view, .posted-date
+{
+    padding: 10px 20px;
+}
+@media screen and (max-width: 789px)
+ {
+
+    .blog-section, .section-content, .cards
+{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 50px;
+    margin: 25px auto;
+    padding: 100px;
+}
+ }
+
+/* footer */
+footer {
+    background-color: #555555 ;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-paragraph
+{
+    padding-right: 30%;
+}
+
+.footer-logo img {
+    width: 60px;
+    border-radius: 30px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Acticles */
+.image-banner { 
+    
+    float: left; 
+    padding: 0 20px 0px 0;
+    margin-top: -14px;
+    width: 60px;
+   }
+   .text {
+     overflow: hidden;
+     display: flex;
+    color: rgba(0,0,0, 0.4);
+   }
+.image-article
+{
+    display: flex;
+    justify-content: center;
+}
+.hr-article
+{
+        background-color: #222; 
+        padding: 1px; 
+        margin-top: 10px; 
+      
+      
+}
+.title-article
+{
+    text-align: center;
+    font-weight: 100;
+    font-size: 25px;
+}
+.img-article1
+{
+   
+    width:500px;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+}
+.img-article1-2
+{
+   
+    width:500px;
+    padding: 20px;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+}
+.paragraph-article
+{
+    padding: 0 50px 20px;
+    margin: 10px;
+}
+/* À ne pas manquer */
+.blog-section-news
+{
+    width: 100%;
+}
+.blog-section-news, .section-content-news
+{
+    width: 85%;
+    margin:20px auto;
+}
+.blog-section-news, .section-content-news, .cards-news
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    margin: 25px auto;
+}
+.blog-section-news, .section-content-news, .cards-news, .card-news
+{
+    width: 100%;
+    position: relative;
+}
+.blog-section-news, .section-content-news, .cards-news, .card-news img
+{
+    width: 80%;
+  height: auto;
+  padding: 20px;
+}
+.blog-section-news, .section-content-news, .cards-news, .card-news .article-news
+{
+    padding: 20px 20px;
+}
+
+.blog-section-news, .section-content-news, .cards-news, .card-news .article-news p
+{
+    margin: 16px 0px;
+    font-size: 15px;
+}
+
+.article-view-news, .posted-date-news
+{
+    padding: 10px 20px;
+    font-size: 15px;
+}
+@media screen and (max-width: 789px)
+ {
+
+    .blog-section-news, .section-content-news, .cards-news 
+{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 50px;
+    margin: 25px auto;
+    padding: 100px;
+}
+.article-view-news, .posted-date-news
+{
+    padding: 10px 20px;
+    font-size: 15px;
+}
+.blog-section-news, .section-content-news, .cards-news, .card-news .article-news p
+{
+    margin: 16px 0px;
+    font-size: 15px;
+}
+.blog-section-news, .section-content-news, .cards-news, .card-news img
+{
+    width: 80%;
+  height: auto;
+  padding: 20px;
+}
+ }
+/* Formulaire commentaire */ 
+#form-outer
+	{
+		background-color: #FAFAFA;
+		margin:0 auto;
+		border-radius: 6px;
+		width: 75%;
+		max-width: 900px;
+		padding: 10px;
+		padding-top: 30px;
+	}
+	.labels
+	{
+		display: inline-block;
+		text-align: right;
+		width: 40%;
+		padding: 5px;
+		vertical-align: top;
+		margin-top: 10px;
+	}
+	.rightTab
+	{
+		display: inline-block;
+		text-align: left;
+		width: 48%;
+		vertical-align: middle;
+	}
+   
+	.input-field
+	{
+		height: 20px;
+		width: 280px;
+		padding: 5px;
+		margin:10px;
+		border: 1px solid #c0c0c0;
+		border-radius: 2px;
+	}
+	
+	#submit 
+	{
+        background-color: #59ace0;
+		border-radius: 4px;
+		color: white;
+		font-size: 1em;
+		height: 40px;
+		width: 96px;
+		margin: 10px;
+		border: 0px solid;
+      
+	}   
+	
+	
+	@media screen and (max-width: 833px) 
+	{
+		.input-field 
+		{
+			width: 80%;
+		}
+		select 
+		{
+			width: 90%;
+		}
+	}
+
+	@media screen and (max-width: 520px) 
+	{
+		.labels 
+		{
+			width: 100%;
+			text-align: left;
+		}
+		.rightTab 
+		{
+			width: 80%;
+			float: left;
+		}
+		.input-field 
+		{
+			width: 100%;
+		}
+		
+	}
+
+/* Footer */
+
+/* Contact */
+
+.body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container-contact {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+}
+
+
+
+.form-group {
+    margin-bottom: 25px;
+    position: relative;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input, textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #f5f5f5;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    background-color: #e0e0e0;
+}
+
+button {
+    background-color: #ff5a5f;
+    color: white;
+    padding: 12px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #e74c4f;
+}
+
+/* Réseaux sociaux */
+.social-media a
+{
+   margin-right: 10px;
+}
+
+
+
+
